@@ -1,0 +1,13 @@
+<!-- Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um
+ novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado 
+ da divisão do primeiro valor lido pelo segundo valor. -->
+<script>
+    var num1=prompt("Digite um número");
+    var num2=prompt("Outro número");
+
+    while(num2<=0){
+        num2=prompt("Número inválido, digite outro");
+    }
+
+    alert("A divisão é igual a "+num1/num2)
+</script>

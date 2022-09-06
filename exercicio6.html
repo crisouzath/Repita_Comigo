@@ -1,0 +1,50 @@
+<!-- Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após 
+escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado
+ novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados. -->
+
+ <!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+        }
+    </style>
+   <script>
+    var alunos=[];
+    var notas=[];
+   do{
+    var nome_aluno=prompt("Insira o nome do aluno");
+   var nota1=parseInt(prompt("Insira a primeira nota"));
+   var nota2=parseInt(prompt("Insira a segunda nota"));
+   var media=(nota1+nota2)/2;
+   alunos.push(nome_aluno);
+   notas.push(media);
+    alert("A média de "+nome_aluno+" foi "+media);
+
+   var resposta=prompt("Calcular a média de outro aluno Sim ou Não?");
+   } while(resposta=="sim" || resposta=="Sim");
+
+   for(var i=0; i<alunos.length; i++){
+    if(notas[i]>=9.5){
+        document.write(alunos[i]+" está aprovado(a) com média "+notas[i]+"<br>");
+    }else{
+        document.write(alunos[i]+" está reprovado(a) com média "+notas[i]+"<br>");
+    }
+   }
+
+
+   
+</script>
+
+</head>
+<body>
+    
+    
+
+</body>
+</html>
