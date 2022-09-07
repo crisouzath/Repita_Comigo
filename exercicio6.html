@@ -27,13 +27,11 @@ escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um 
     alert("A média de "+nome_aluno+" foi "+media);
 
    var resposta=prompt("Calcular a média de outro aluno Sim ou Não?");
-   } while(resposta=="sim" || resposta=="Sim");
+   } while(resposta=="sim" || resposta=="Sim" || resposta=="s" || resposta=="S");
 
    for(var i=0; i<alunos.length; i++){
     if(notas[i]>=9.5){
         document.write(alunos[i]+" está aprovado(a) com média "+notas[i]+"<br>");
-    }else{
-        document.write(alunos[i]+" está reprovado(a) com média "+notas[i]+"<br>");
     }
    }
 
